@@ -1,6 +1,6 @@
-package scala.Curring_lesson
+package scala.MultipleParamGroup
 
-object ImplicitCurring {
+object Implicit {
 
 
   def beautify[A](list:List[A])(implicit f : List[A] => String):String={

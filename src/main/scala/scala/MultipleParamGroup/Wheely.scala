@@ -1,6 +1,6 @@
-package scala.Curring_lesson
+package scala.MultipleParamGroup
 
-object WheelyCurring {
+object Wheely {
 
   def wheely(expr: => Boolean)(block: => Unit): Unit = {
     while (expr) {

@@ -1,4 +1,4 @@
-package scala.Curring_lesson
+package scala.MultipleParamGroup
 
 import java.io.FileReader
 
@@ -31,7 +31,7 @@ object AutoCloseCurring {
   def main(args: Array[String]): Unit = {
 
     println("***Using Closeable trait as type bound***")
-    using1[FileReader with Closeable,Unit](new FileReader("src\\main\\scala\\scala\\Curring_lesson\\AutoCloseCurring.scala") with Closeable){
+    using1[FileReader with Closeable,Unit](new FileReader("src\\main\\scala\\scala\\Curring_lesson\\AutoClose.scala") with Closeable){
       fr => println("File Encoding : "+ fr.getEncoding)
     }
     println("*"*20)
@@ -39,7 +39,7 @@ object AutoCloseCurring {
     println("-"*30)
 
     println("***Using method as type bound***")
-    using2[FileReader,Unit](new FileReader("src\\main\\scala\\scala\\Curring_lesson\\AutoCloseCurring.scala")){
+    using2[FileReader,Unit](new FileReader("src\\main\\scala\\scala\\Curring_lesson\\AutoClose.scala")){
       fr => println("File Encoding : "+ fr.getEncoding)
     }
     println("*"*20)

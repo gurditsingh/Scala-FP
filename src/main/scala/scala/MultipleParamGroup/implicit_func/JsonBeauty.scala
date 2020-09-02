@@ -1,4 +1,4 @@
-package scala.Curring_lesson.implicit_func
+package scala.MultipleParamGroup.implicit_func
 
 object JsonBeauty {
 
